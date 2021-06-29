@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+    
+</head>
+<body>
+    <ul>    
+        <li>Type</li>
+        <input type="radio" id="espresso" name="type" onchange="choosecoffee1()" value="25000">
+        <label>Espresso</label><br>
+        <input type="radio" id="cappuccino" name="type" onchange="choosecoffee1()" value="30000">
+        <label>Cappuccino</label><br>  
+        <input type="radio" id="americano" name="type" onchange="choosecoffee1()" value="25000">
+        <label>Americano</label><br>
+        <input type="radio" id="pourover" name="type" onchange="choosecoffee2()" value="40000">
+        <label>Pour over</label><br>
+        <input type="radio" id="chemex" name="type" onchange="choosecoffee3()" value="80000">
+        <label>Chemex</label>
+                
+        <br><br>
+
+        <div id="coffeesize" >
+            <li>Size</li>
+            <input type="radio" id="Small" name="size" value="1">
+            <label>Small</label><br>
+            <input type="radio" id="Medium" name="size" value="1.5" checked>
+            <label>Medium(default)</label><br>
+            <input type="radio" id="Large" name="size" value="2.25">
+            <label>Large</label>
+        </div>
+
+        <div id="espressotype" >
+            <li>Espresso type</li>
+            <input type="radio" id="Single" name="etype" value="1" checked>
+            <label>Single</label><br>
+            <input type="radio" id="Double" name="etype" value="2">
+            <label>Double</label>
+        </div>
+            
+        <br>
+ 
+        <li>Coffee</li>
+        <input type="radio" id="houseespresso" name="coffee" value="House espresso" checked>
+        <label>House espresso (default)</label><br>
+        <input type="radio" id="guestespresso" name="coffee" value="Guest espresso">
+        <label>Guest espresso</label><br>  
+        <input type="radio" id="singleorigin" name="coffee" value="Single origin">
+        <label>Single origin</label><br>
+        <input type="radio" id="houseblend" name="coffee" value="House blend">
+        <label>House blend (default)</label> 
+
+        <br><br>
+        
+        <li>Extras</li>
+        <input type="checkbox" id="cold milk" name="extras" price="10000" value="10000">
+        <label>Cold milk</label><br>
+        <input type="checkbox" id="hot milk" name="extras" price="10000" value="10000">
+        <label>Hot milk</label><br>  
+        <input type="checkbox" id="chocolate dusting" name="extras" price="10000" value="10000">
+        <label>Chocolate dusting</label><br>
+        <input type="checkbox" id="marsh mallows" name="extras" price="10000" value="10000">
+        <label>Marshmallows</label><br>
+        <input type="checkbox" id="whipped cream" name="extras" price="10000" value="10000">
+        <label>Whipped cream</label>
+
+        <br><br>
+
+        <input type="submit" id="btn" value="Click here to see your current drink choice">
+    </ul>
+
+    <p id="drink"></p> 
+    <p id="price"></p>
+    <input type="submit" id="favor" value="Save to favourite">
+    <input type="submit" id="addtocart" value="Add to cart">
+    <input type="submit" id="favorcart" value="Click here to see your favourite">
+    <input type="submit" id="seecart" value="Click here to see your cart">
+
+    <div id="cart">
+        <h2>My Cart</h2>
+        <br>
+        <p id="cartlist"></p>
+        <p id="favlist"></p>
+        <br>
+        <p id="order">Total = 0</p>
+        <input type="submit" id="clearorder" value="Clear order">
+        <input type="submit" id="closecart" value="Click here to close your cart">
+        <input type="submit" id="placeorder" value="Place order">
+    </div>
+
+    <div id="favourite">
+        <h2>My Favourite</h2>
+        <br>
+        <p id="favordrink"></p>
+        <br>
+        <input type="submit" id="orderf" value="Order favourite">
+        <input type="submit" id="closef" value="Click here to close your favourite">
+    </div>
+
+<script src="js.js"></script>
+
+</body>
+</html>
